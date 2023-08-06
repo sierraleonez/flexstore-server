@@ -3,7 +3,6 @@ import multer from "multer";
 import { iBucketController } from "../../types";
 import { wrapAsync } from "../utils/wrapper";
 import { createBucketSchema, createValidator } from "../validators/bucket/bucket.schema";
-import { body } from "express-validator";
 
 export function BucketRoute(
   upload: multer.Multer,

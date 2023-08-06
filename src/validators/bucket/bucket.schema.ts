@@ -21,6 +21,7 @@ export function createValidator(
 
 function handleValidationError() {
   return (req: req, res: res, next: any) => {
+    console.log(req.body)
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const response = {
