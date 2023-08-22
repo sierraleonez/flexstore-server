@@ -6,13 +6,23 @@ import { ErrorHandler } from "./src/middlewares/errorHandler";
 import { Bucket } from "./src/controllers/bucket.controller";
 import { BucketRoute } from "./src/routes/bucket.route";
 import { ExpressValidator } from "express-validator";
+import { EventsRoute } from "./src/routes/events.route";
+import { UserRoute } from "./src/routes/user.route";
+import User from "./src/controllers/users.controller";
+import UserService from "./src/services/users.service";
+import { PrismaClient } from "@prisma/client";
 
 Dotenv.config();
 
 function init() {
   const app = express();
-  const GcloudService = new GCloud(process.env.GCLOUD_SERVICE_ACCOUNT || "");
-  const BucketController = new Bucket(GcloudService);
+  const prisma = new PrismaClient()
+  // const GcloudService = new GCloud(process.env.GCLOUD_SERVICE_ACCOUNT || "");
+  const userService = new UserService(prisma)
+
+  // const BucketController = new Bucket(GcloudService);
+  const UserController = new User(userService)
+
   const storage = multer.diskStorage({
     destination: "tmp/uploads",
     filename(req, file, callback) {
@@ -24,7 +34,11 @@ function init() {
 
   app.use(express.urlencoded({ extended: true })); // support encoded bodies
 
-  app.use("/bucket", BucketRoute(upload, BucketController));
+  // app.use("/bucket", BucketRoute(upload, BucketController));
+
+  app.use("/events", EventsRoute());
+
+  app.use("/users", UserRoute(UserController))
 
   app.get("/", (_, res) => {
     console.log("hello world");

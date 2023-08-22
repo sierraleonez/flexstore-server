@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-prod": "./app.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +15,12 @@
     "@google-cloud/storage": "^6.11.0",
     "@prisma/client": "^4.16.2",
     "@types/http-errors": "^2.0.1",
+    "auto-bind": "^5.0.1",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
     "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.1",
     "multer": "^1.4.5-lts.1",
     "node-pg-migrate": "^6.2.2",
     "pg": "^8.11.1"

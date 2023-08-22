@@ -1,0 +1,58 @@
+export const dummyEvents = [
+    {
+      id: "1",
+      eventType: "offline",
+      type: "event",
+      title: "AWS CloudDay 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, architecto similique minima obcaecati eius aliquid placeat illo molestias reiciendis sunt, assumenda vero natus dolore? Ipsa earum excepturi dicta quidem?",
+      target: "Umum",
+      location: "Jakarta, Indonesia",
+      date: "26 September 2023",
+      publisher: "AWS",
+      cp: "082242404797",
+      flyer: "https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4",
+    },
+    {
+      id: "2",
+      eventType: "offline",
+      type: "event",
+      title: "AWS CloudDay 2",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, architecto similique minima obcaecati eius aliquid placeat illo molestias reiciendis sunt, assumenda vero natus dolore? Ipsa earum excepturi dicta quidem?",
+      target: "Umum",
+      location: "Jakarta, Indonesia",
+      date: "26 September 2023",
+      publisher: "AWS",
+      cp: "082242404797",
+      flyer: "https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4",
+    },
+    {
+      id: "3",
+      eventType: "offline",
+      type: "event",
+      title: "AWS CloudDay 3",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, architecto similique minima obcaecati eius aliquid placeat illo molestias reiciendis sunt, assumenda vero natus dolore? Ipsa earum excepturi dicta quidem?",
+      target: "Umum",
+      location: "Jakarta, Indonesia",
+      date: "26 September 2023",
+      publisher: "AWS",
+      cp: "082242404797",
+      flyer: "https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4",
+    },
+    {
+      id: "4",
+      eventType: "offline",
+      type: "event",
+      title: "AWS CloudDay 4",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, architecto similique minima obcaecati eius aliquid placeat illo molestias reiciendis sunt, assumenda vero natus dolore? Ipsa earum excepturi dicta quidem?",
+      target: "Umum",
+      location: "Jakarta, Indonesia",
+      date: "26 September 2023",
+      publisher: "AWS",
+      cp: "082242404797",
+      flyer: "https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4",
+    },
+  ]
